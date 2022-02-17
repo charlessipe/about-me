@@ -1,0 +1,20 @@
+h1 {color: darkolivegreen}
+
+h2 {
+  background-color: #ECECEC;
+  width: 20%;
+}
+
+
+.employment {box-shadow: 7px;}
+
+p {
+  background-color: beige;
+  padding: 5px;
+  font-size: 1.3em;
+  width: 80%;
+}
+
+hr {
+  border-bottom: .2rem solid goldenrod;
+}
