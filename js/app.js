@@ -49,9 +49,9 @@ let attemptcounter = 0;
 
 for (let i = 0; i < attempts; i++){
     let question6 = prompt('What number am I thinking of between 0 and 10?');
-    if(question6 === 5){
+    if (question6 == 5){
         alert("5 is the correct number!");
-        attempts = 0;
+        attempts = 0; 
     } else if (question6 > 5){
         alert("Your guess is too high.");
         attemptcounter++;
