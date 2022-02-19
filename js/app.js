@@ -44,4 +44,49 @@ if (question5 === 'yes' || question5 === 'y') {
   alert('Actually, I have.');
 }
 
+let attempts = 4;
+let attemptcounter = 0;
+
+for (let i = 0; i < attempts; i++){
+    let question6 = prompt('What number am I thinking of between 0 and 10?');
+    if(question6 === 5){
+        alert("5 is the correct number!");
+        attempts = 0;
+    } else if (question6 > 5){
+        alert("Your guess is too high.");
+        attemptcounter++;
+    } else if (question6 < 5){
+        alert("Your guess is too low.");
+        attemptcounter++;
+    }
+} 
+
+if (attemptcounter ===4){
+    alert("You have exhausted your 4 attempts. The answer is 5.")
+}
+
+
+
+/*
+if (question6 > 5){
+  alert("Your guess is too low. Try again.")
+} else if(question6 < 5){
+  alert("Your guess is too high. Try again.")
+} else if(question6 === 5){
+  alert("You are correct!");
+} else{
+    alert("Please enter a number between 0 and 10.")
+}
+*/
+
+
+//Indicates through an alert if the guess is “too high” or “too low”.
+
+//It should give the user exactly four opportunities to get the correct answer.
+
+// After all attempts have been exhausted, 
+// tell the user the correct answer. Consider using a loop of some sort.
+
+
 alert("Thanks for playing " + username + "!");
+
