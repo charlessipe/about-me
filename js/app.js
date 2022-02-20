@@ -1,5 +1,6 @@
 'use strict';
 
+let score = 0;
 let username = prompt('What is your name?');
 
 alert("Hello " + username + "!");
@@ -8,6 +9,7 @@ let question1 = prompt('Was my first job after graduation an accounting clerk?')
 
 if (question1 === 'yes' || question1 === 'y') {
   alert('Yes is correct!');
+  score++;
 } else {
   alert('Sorry, no is not the correct response.');
 }
@@ -16,6 +18,7 @@ let question2 = prompt('Have I ever worked part time at the Seattle Sonics Team 
 
 if (question2 === 'yes' || question2 === 'y') {
   alert('You\'re right!');
+  score++;
 } else {
   alert('Sorry, that is incorrect');
 }
@@ -26,6 +29,7 @@ if (question3 === 'yes' || question3 === 'y') {
   alert('No, it was actually Texas, not Oklahoma.');
 } else {
   alert('Yes, that is right.');
+  score++;
 }
 
 let question4 = prompt('Have I ever been fired?').toLowerCase();
@@ -34,12 +38,14 @@ if (question4 === 'yes' || question4 === 'y') {
   alert('No, I have not.');
 } else {
   alert('Yes, that is right.');
+  score++;
 }
 
 let question5 = prompt('Have I ever commuted over 25 miles to work?').toLowerCase();
 
 if (question5 === 'yes' || question5 === 'y') {
   alert('Yep, it was brutal.');
+  score++;
 } else {
   alert('Actually, I have.');
 }
@@ -52,6 +58,7 @@ for (let i = 0; i < attempts; i++){
     if (question6 == 5){
         alert("5 is the correct number!");
         attempts = 0; 
+        score++;
     } else if (question6 > 5){
         alert("Your guess is too high.");
         attemptcounter++;
@@ -76,6 +83,7 @@ for (let j = 0; j < trys; j++){
     if (question7 === favoriteWebsites[0] || question7 === favoriteWebsites[1]) {
       alert('Correct. Acceptable answers are ' + favoriteWebsites[0] + " and " + favoriteWebsites[1]);
       trys = 0;
+      score++;
     } else {
       alert('Not quite. Remaining tries: ' + (trys - j - 1));
       trycounter++;
@@ -108,5 +116,5 @@ if (question6 > 5){
 // tell the user the correct answer. Consider using a loop of some sort.
 
 
-alert("Thanks for playing " + username + "!");
+alert("Thanks for playing " + username + "! You answered " + score + " questions correctly." );
 
