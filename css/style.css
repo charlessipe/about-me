@@ -1,4 +1,7 @@
-h1 {color: darkolivegreen}
+h1 {
+  color: olivedrab;
+  border: solid 3px #ECECEC;
+}
 
 h2 {
   background-color: #ECECEC;
@@ -14,6 +17,16 @@ p {
   font-size: 1.3em;
   width: 80%;
 }
+
+ol {
+    background-color: blanchedalmond;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 80%;
+    margin:15px;
+  }
+
+
 
 hr {
   border-bottom: .2rem solid goldenrod;
