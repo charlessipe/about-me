@@ -5,14 +5,17 @@ let username = prompt('What is your name?');
 
 alert("Hello " + username + "!");
 
-let question1 = prompt('Was my first job after graduation an accounting clerk?').toLowerCase();
+function question1() {
+  let question1 = prompt('Was my first job after graduation an accounting clerk?').toLowerCase();
 
-if (question1 === 'yes' || question1 === 'y') {
-  alert('Yes is correct!');
-  score++;
-} else {
-  alert('Sorry, no is not the correct response.');
+  if (question1 === 'yes' || question1 === 'y') {
+    alert('Yes is correct!');
+    score++;
+  } else {
+    alert('Sorry, no is not the correct response.');
+  }
 }
+question1();
 
 let question2 = prompt('Have I ever worked part time at the Seattle Sonics Team Shop at Key Arena?').toLowerCase();
 
