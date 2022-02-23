@@ -41,14 +41,18 @@ function question3() {
 }
 question3();
 
-let question4 = prompt('Have I ever been fired?').toLowerCase();
+function question4() {
+  let question4 = prompt('Have I ever been fired?').toLowerCase();
 
-if (question4 === 'yes' || question4 === 'y') {
-  alert('No, I have not.');
-} else {
-  alert('Yes, that is right.');
-  score++;
+  if (question4 === 'yes' || question4 === 'y') {
+    alert('No, I have not.');
+  } else {
+    alert('Yes, that is right.');
+    score++;
+  }
 }
+question4();
+
 
 let question5 = prompt('Have I ever commuted over 25 miles to work?').toLowerCase();
 
