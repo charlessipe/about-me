@@ -17,14 +17,17 @@ function question1() {
 }
 question1();
 
-let question2 = prompt('Have I ever worked part time at the Seattle Sonics Team Shop at Key Arena?').toLowerCase();
+function question2() {
+  let question2 = prompt('Have I ever worked part time at the Seattle Sonics Team Shop at Key Arena?').toLowerCase();
 
-if (question2 === 'yes' || question2 === 'y') {
-  alert('You\'re right!');
-  score++;
-} else {
-  alert('Sorry, that is incorrect');
+  if (question2 === 'yes' || question2 === 'y') {
+    alert('You\'re right!');
+    score++;
+  } else {
+    alert('Sorry, that is incorrect');
+  }
 }
+question2();
 
 let question3 = prompt('Have I ever lived in Oklahoma?').toLowerCase();
 
