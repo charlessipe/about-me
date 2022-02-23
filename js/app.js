@@ -53,15 +53,18 @@ function question4() {
 }
 question4();
 
+function question5() {
+  let question5 = prompt('Have I ever commuted over 25 miles to work?').toLowerCase();
 
-let question5 = prompt('Have I ever commuted over 25 miles to work?').toLowerCase();
-
-if (question5 === 'yes' || question5 === 'y') {
-  alert('Yep, it was brutal.');
-  score++;
-} else {
-  alert('Actually, I have.');
+  if (question5 === 'yes' || question5 === 'y') {
+    alert('Yep, it was brutal.');
+    score++;
+  } else {
+    alert('Actually, I have.');
+  }
 }
+question5();
+
 
 let attempts = 4;
 let attemptcounter = 0;
