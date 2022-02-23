@@ -90,28 +90,30 @@ function question6 () {
 }
 question6();
 
-let favoriteWebsites = ['cal newport', 'css tricks'];
+function question7() {
+  let favoriteWebsites = ['cal newport', 'css tricks'];
 
-let trys = 6;
-let trycounter = 0;
-
-for (let j = 0; j < trys; j++){
-    let question7 = prompt('What is one of my favorite websites that start with C?').toLowerCase();
-
-    if (question7 === favoriteWebsites[0] || question7 === favoriteWebsites[1]) {
-      alert('Correct. Acceptable answers are ' + favoriteWebsites[0] + " and " + favoriteWebsites[1]);
-      trys = 0;
-      score++;
-    } else {
-      alert('Not quite. Remaining tries: ' + (trys - j - 1));
-      trycounter++;
-    }
+  let trys = 6;
+  let trycounter = 0;
+  
+  for (let j = 0; j < trys; j++){
+      let question7 = prompt('What is one of my favorite websites that start with C?').toLowerCase();
+  
+      if (question7 === favoriteWebsites[0] || question7 === favoriteWebsites[1]) {
+        alert('Correct. Acceptable answers are ' + favoriteWebsites[0] + " and " + favoriteWebsites[1]);
+        trys = 0;
+        score++;
+      } else {
+        alert('Not quite. Remaining tries: ' + (trys - j - 1));
+        trycounter++;
+      }
+  }
+  
+  if (trycounter ===6){
+      alert("You are out of attempts. Acceptable answers are " + favoriteWebsites[0] + " and " + favoriteWebsites[1]);
+  }  
 }
-
-if (trycounter ===6){
-    alert("You are out of attempts. Acceptable answers are " + favoriteWebsites[0] + " and " + favoriteWebsites[1]);
-}
-
+question7();
 
 /*
 if (question6 > 5){
