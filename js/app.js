@@ -65,28 +65,30 @@ function question5() {
 }
 question5();
 
-
-let attempts = 4;
-let attemptcounter = 0;
-
-for (let i = 0; i < attempts; i++){
-    let question6 = prompt('What number am I thinking of between 0 and 10?');
-    if (question6 == 5){
-        alert("5 is the correct number!");
-        attempts = 0; 
-        score++;
-    } else if (question6 > 5){
-        alert("Your guess is too high.");
-        attemptcounter++;
-    } else if (question6 < 5){
-        alert("Your guess is too low.");
-        attemptcounter++;
-    }
-} 
-
-if (attemptcounter ===4){
-    alert("You have exhausted your 4 attempts. The answer is 5.")
+function question6 () {
+  let attempts = 4;
+  let attemptcounter = 0;
+  
+  for (let i = 0; i < attempts; i++){
+      let question6 = prompt('What number am I thinking of between 0 and 10?');
+      if (question6 == 5){
+          alert("5 is the correct number!");
+          attempts = 0; 
+          score++;
+      } else if (question6 > 5){
+          alert("Your guess is too high.");
+          attemptcounter++;
+      } else if (question6 < 5){
+          alert("Your guess is too low.");
+          attemptcounter++;
+      }
+  } 
+  
+  if (attemptcounter ===4){
+      alert("You have exhausted your 4 attempts. The answer is 5.")
+  }  
 }
+question6();
 
 let favoriteWebsites = ['cal newport', 'css tricks'];
 
