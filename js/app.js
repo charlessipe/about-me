@@ -29,14 +29,17 @@ function question2() {
 }
 question2();
 
-let question3 = prompt('Have I ever lived in Oklahoma?').toLowerCase();
+function question3() {
+  let question3 = prompt('Have I ever lived in Oklahoma?').toLowerCase();
 
-if (question3 === 'yes' || question3 === 'y') {
-  alert('No, it was actually Texas, not Oklahoma.');
-} else {
-  alert('Yes, that is right.');
-  score++;
+  if (question3 === 'yes' || question3 === 'y') {
+    alert('No, it was actually Texas, not Oklahoma.');
+  } else {
+    alert('Yes, that is right.');
+    score++;
+  }
 }
+question3();
 
 let question4 = prompt('Have I ever been fired?').toLowerCase();
 
